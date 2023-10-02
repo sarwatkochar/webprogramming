@@ -1,0 +1,58 @@
+<html> 
+
+  <head>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>  
+
+
+      <body>
+            <p>hello</p>
+            <p> Sarwat Kochar </p>
+
+            <label>Username</label>
+             <input type="text" id="username" class="form-control" value="Web Programming">
+            <label>Email</label>
+            <input type="email" id="email" class="form-control">
+             <p id="showvalue"></p>
+             <button id="btn3" class="btn btn-info"> Show Value</button>
+
+
+
+
+
+        
+                  <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+                          <p> Please Choose one of them...:</p>
+   
+
+                   <button id ="btn1"> show text </button>
+                   <button id ="btn2"> show Html </button>
+      </body> 
+              <script>
+                     $("p").click(function(){
+                     $("p").hide();
+
+                      $("input").focus(function(){
+                      $(this).css("background-color","yellow");
+
+                      });
+
+                      $("input").blur(function(){
+                      $(this).css("background-color", "green");
+                      });
+                      });
+                        
+                                        
+                      $("#btn1").click(function(){
+                      alert("Text: " + $("#test").text());
+                      });
+                      $("#btn2").click(function(){
+                      alert("HTML: " + $("#test").html());
+                      });
+
+          
+
+   </script>
+</html>
